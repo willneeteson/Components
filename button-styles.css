@@ -7,6 +7,12 @@
     text-decoration: none;
 }
 
+.btn__animate div {
+
+    color: yellow;
+}
+
+
 .btn__animate::before,
 .btn__animate::after {
     content: var(--button-text);
