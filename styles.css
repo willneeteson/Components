@@ -2,14 +2,7 @@
     position: relative;
     display: inline-block;
     overflow: hidden;
-    text-align: center;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    background-color: #0077cc;
-    border: none;
     color: transparent;
-    /* Make text invisible */
     cursor: pointer;
     text-decoration: none;
 }
@@ -33,7 +26,6 @@
     justify-content: center;
     align-items: center;
     color: #fff;
-    /* Visible text color */
 }
 
 .btn__animate::after {
@@ -44,7 +36,6 @@
     justify-content: center;
     align-items: center;
     color: #fff;
-    /* Visible text color */
 }
 
 .btn__animate:hover::before {
