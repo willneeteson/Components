@@ -7,11 +7,9 @@
     text-decoration: none;
 }
 
-.btn__animate div {
-
-    color: yellow;
+.btn__animate>div {
+    color: transparent;
 }
-
 
 .btn__animate::before,
 .btn__animate::after {
