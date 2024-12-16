@@ -1,0 +1,56 @@
+.btn__animate {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #0077cc;
+    border: none;
+    color: transparent;
+    /* Make text invisible */
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn__animate::before,
+.btn__animate::after {
+    content: var(--button-text);
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-weight: inherit;
+    transition: transform 0.3s ease;
+}
+
+.btn__animate::before {
+    top: 0;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    /* Visible text color */
+}
+
+.btn__animate::after {
+    top: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    /* Visible text color */
+}
+
+.btn__animate:hover::before {
+    transform: translateY(-100%);
+}
+
+.btn__animate:hover::after {
+    transform: translateY(-100%);
+}
